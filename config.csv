@@ -1,0 +1,18 @@
+type,scrapeMethod,scrapeAttribute,name,value
+baseUrl,,,,https://www.propertyguru.com.sg/property-for-sale/{iii}?
+range,,,,1||5
+baseSelector,,,,#listings-container > div.listing-card
+selector,innerText,,houseName,.header-wrapper .nav-link
+selector,innerText,,address,.listing-location.ellipsis
+selector,innerText,,price,.list-price
+selector,innerText,,room,.listing-rooms > span.bed
+selector,innerText,,bathroom,.listing-rooms > span.bath
+selector,innerText,sqft,totalSqft,.listing-floorarea
+selector,innerText,psf,psf,.listing-floorarea
+selectorr,innerText,,walkToMRT,.listing-features:last-of-type
+selector,innerText,"HDB Flat,Condominium,House,Apartment",type,.listing-property-type li
+selector,innerText,hold,ownership,.listing-property-type li
+selector,innerText,"Built:,New Project:",builtYear,.listing-property-type li
+selectorr,src,,houseImg,div.image-container > div.gallery-wrapper div.gallery-container li:nth-child(1) > img
+selector,.attributes.data-listing-id.nodeValue,,id,
+selector,href,,detailLink,.header-wrapper .nav-link
