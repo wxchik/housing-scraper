@@ -1,6 +1,6 @@
 type,scrapeMethod,scrapeAttribute,name,value
-baseUrl,,,,https://www.propertyguru.com.sg/property-for-sale/{iii}?
-range,,,,1||5
+baseUrl,,,,https://www.property.com.sg/property-for-sale/{iii}?
+range,,,,1||2
 baseSelector,,,,#listings-container > div.listing-card
 selector,innerText,,houseName,.header-wrapper .nav-link
 selector,innerText,,address,.listing-location.ellipsis
